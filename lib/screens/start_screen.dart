@@ -21,7 +21,8 @@ class _StartScreenState extends State<StartScreen> {
   bool checkedValue = true;
   bool isLoginOpen = false;
 
-  final _formKey = GlobalKey<FormState>();
+  final _formKeyLogin = GlobalKey<FormState>();
+  final _formKeyRegister = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -73,7 +74,7 @@ class _StartScreenState extends State<StartScreen> {
                       ),
                       child: isLoginOpen
                           ? Form(
-                              key: _formKey,
+                              key: _formKeyLogin,
                               child: Column(
                                 children: [
                                   buildUsernameInput(),
@@ -87,7 +88,7 @@ class _StartScreenState extends State<StartScreen> {
                               ),
                             )
                           : Form(
-                              key: _formKey,
+                              key: _formKeyRegister,
                               child: Column(
                                 children: [
                                   buildUsernameInput(),
@@ -263,7 +264,7 @@ class _StartScreenState extends State<StartScreen> {
       ),
       child: ElevatedButton(
         onPressed: () {
-          if (_formKey.currentState!.validate()) {
+          if (_formKeyLogin.currentState!.validate()) {
             ScaffoldMessenger.of(context).showSnackBar(
               const SnackBar(content: Text('Loading ...')),
             );
@@ -305,7 +306,7 @@ class _StartScreenState extends State<StartScreen> {
       ),
       child: ElevatedButton(
         onPressed: () {
-          if (_formKey.currentState!.validate()) {
+          if (_formKeyRegister.currentState!.validate()) {
             ScaffoldMessenger.of(context).showSnackBar(
               const SnackBar(content: Text('Loading ...')),
             );
