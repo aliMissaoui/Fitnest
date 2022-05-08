@@ -1,7 +1,16 @@
-# fitnest
+# Fitnest
 
-A new Flutter project.
+Flutter UI Design: **Welcome screen & Login & Sign up**.
+![fitnest screens](https://user-images.githubusercontent.com/68671238/167317144-6c043e59-7180-4715-802f-7cbeec08f1a9.png)
 
+If you like my work, don't hesitate to give a **star** and **support me** to do more, and **thanks**!
+
+- Feel free to [**Subscribe**](https://www.youtube.com/channel/UC2PhG56Owj3JtKBug7zkBWw) to my [**YouTube**](https://www.youtube.com/channel/UC2PhG56Owj3JtKBug7zkBWw) channel to stay updated with more cool tutorials.
+
+### More Flutter tutorials on YouTube!
+**Full Playlist:** https://www.youtube.com/playlist?list=PLjAwYdBbK5TYj8ovS6If97Y_PmPXt_60E
+
+------------------------------
 ## Getting Started
 
 This project is a starting point for a Flutter application.
